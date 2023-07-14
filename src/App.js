@@ -201,7 +201,11 @@ class App extends Component {
       // Allow only 1 "." on Screen
       if (this.state.input.includes('.') || display.textContent.includes('.')) {
         dotButton.disabled = true;
-      } else {
+      }
+      else if (this.state.result !== '' && this.state.input === '') {
+        dotButton.disabled = true;
+      }
+      else {
         dotButton.disabled = false;
       }
 

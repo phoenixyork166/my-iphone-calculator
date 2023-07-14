@@ -1,26 +1,572 @@
-.body {
-    box-sizing: border-box;
+/* iphone 6 */
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 559px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 120vw;
+            width: 90vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 27%;
+            height: 66%;
+            width: 98%;
+        }
+    }
+
+    /* iphone 12Pro, 14 */
+@media only screen
+    and (device-width: 390px)
+    and (device-height: 844px) {
+
+   .body {
+       box-sizing: border-box;
+       
+   }
+   
+   .container {
+       height: 120vw;
+       width: 90vw;
+       position: absolute;
+       border: 1px transparent blueviolet;
+       left: 5%;
+       top: 10%;
+       box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+       border-radius: 20px;
+   }
+   
+   .buttons {
+       display: grid;
+       grid-template-columns: repeat(4, 25%);
+       grid-template-rows: repeat(5, 20%);
+       position: absolute;
+       left: 5%;
+       top: 27%;
+       height: 66%;
+       width: 98%;
+   }
+}
+/* iphone 6-plus */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) {
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 120vw;
+            width: 90vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 27%;
+            height: 66%;
+            width: 98%;
+        }
+}
+
+/* iphone 6 alternatives */
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 120vw;
+            width: 90vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 27%;
+            height: 66%;
+            width: 98%;
+        }
+    }
+
+/* iphone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .body {
+        box-sizing: border-box;
+        
+    }
     
+    .container {
+        height: 120vw;
+        width: 90vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 5%;
+        top: 10%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 27%;
+        height: 66%;
+        width: 98%;
+    }
 }
 
-.container {
-    height: 40vw;
-    width: 35vw;
-    position: absolute;
-    border: 1px transparent blueviolet;
-    left: 5%;
-    top: 10%;
-    box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
-    border-radius: 20px;
+/* iphone < 5 */
+@media screen and (device-aspect-ratio: 2/3) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 120vw;
+        width: 90vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 5%;
+        top: 10%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 27%;
+        height: 66%;
+        width: 98%;
+    }
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(5, 20%);
-    position: absolute;
-    left: 2%;
-    top: 29%;
-    height: 70%;
-    width: 100%;
+@media only screen and (min-width: 495px) {
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 85vw;
+            width: 85vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 29%;
+            height: 70%;
+            width: 95%;
+        }
+    }
+
+@media only screen and (min-width: 600px) {
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 85vw;
+            width: 85vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 29%;
+            height: 70%;
+            width: 95%;
+        }
+    }
+
+@media only screen and (min-width: 820px) {
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 75vw;
+            width: 75vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 10%;
+            top: 7%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 29%;
+            height: 70%;
+            width: 95%;
+        }
+    }
+
+@media only screen and (min-width: 920px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 75vw;
+        width: 75vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 10%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 75vw;
+        width: 75vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 10%;
+        top: 3%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 65vw;
+        width: 65vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 10%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 60vw;
+        width: 60vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 55vw;
+        width: 55vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 50vw;
+        width: 50vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 45vw;
+        width: 45vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 40vw;
+        width: 40vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .body {
+        box-sizing: border-box;
+        
+    }
+    
+    .container {
+        height: 35vw;
+        width: 35vw;
+        position: absolute;
+        border: 1px transparent blueviolet;
+        left: 20%;
+        top: 5%;
+        box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+        border-radius: 20px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        position: absolute;
+        left: 5%;
+        top: 29%;
+        height: 70%;
+        width: 95%;
+    }
+}
+
+/* Samsung Galaxy S20 */
+@media only screen 
+    and (min-device-width: 1440px)
+    and (min-device-height: 3200px) {
+        
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 120vw;
+            width: 90vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 27%;
+            height: 66%;
+            width: 98%;
+        }
 }

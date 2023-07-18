@@ -67,7 +67,7 @@
         }
     }
 
-/* iphone 12Pro, 14 */
+/* iphone 12Pro*/
 @media only screen
     and (device-width: 390px)
     and (device-height: 844px) 
@@ -276,6 +276,7 @@
         }
         
         .buttons {
+            font-size: 1.5rem;
             display: grid;
             grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(5, 20%);

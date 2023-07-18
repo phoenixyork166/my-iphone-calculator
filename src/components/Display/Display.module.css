@@ -1,3 +1,118 @@
+/* iphone 6 */
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 559px) {
+
+        .displayBox {
+            border: 1px solid orange;
+            border-radius: 10px;
+            width: 90%;
+            height: 15%;
+            font-size: 3.5625rem;
+            white-space: nowrap;
+            resize: none;
+            box-shadow: 10px 10px 10px #fff;
+            overflow-x: scroll;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+
+/* iphone 6 alternatives */
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 667px)
+    /* and (-webkit-min-device-pixel-ratio: 2) */ {
+
+        .displayBox {
+            border: 1px solid orange;
+            border-radius: 10px;
+            width: 90%;
+            height: 15%;
+            font-size: 3.5625rem;
+            white-space: nowrap;
+            resize: none;
+            box-shadow: 10px 10px 10px #fff;
+            overflow-x: scroll;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+/* iphone 12Pro*/
+@media only screen
+and (device-width: 390px)
+and (device-height: 844px) 
+/* and (-webkit-device-pixel-ratio: 3)  */ {
+    .displayBox {
+        border: 1px solid orange;
+        border-radius: 10px;
+        width: 90%;
+        height: 15%;
+        font-size: 3.5625rem;
+        white-space: nowrap;
+        resize: none;
+        box-shadow: 10px 10px 10px #fff;
+        overflow-x: scroll;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* iphone 6-plus */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) {
+        .displayBox {
+            border: 1px solid orange;
+            border-radius: 10px;
+            width: 90%;
+            height: 15%;
+            font-size: 3.5625rem;
+            white-space: nowrap;
+            resize: none;
+            box-shadow: 10px 10px 10px #fff;
+            overflow-x: scroll;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+/* iphone 14 */
+@media only screen 
+    and (device-width: 428px)
+    and (device-height: 926px) {
+    .displayBox {
+        border: 1px solid orange;
+        border-radius: 10px;
+        width: 90%;
+        height: 15%;
+        font-size: 3.5625rem;
+        white-space: nowrap;
+        resize: none;
+        box-shadow: 10px 10px 10px #fff;
+        overflow-x: scroll;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 @media only screen and (min-width: 495px) {
     .displayBox {
         border: 1px solid orange;

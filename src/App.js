@@ -101,7 +101,7 @@ class App extends Component {
             });
           })
         } else if (this.state.nextOperation === 'x') {
-          this.setState({ result: ( (Number(this.state.result)*10) * (Number(this.state.input)*10) )/10}, () => {
+          this.setState({ result: ( (Number(this.state.result)*10) * (Number(this.state.input)*10) )/100}, () => {
             this.setState({ input: ''}, () => {
               this.setState({ nextOperation: ''})
             })

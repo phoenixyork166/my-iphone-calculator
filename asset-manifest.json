@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-iphone-calculator/static/css/main.c88be785.css",
+    "main.css": "/my-iphone-calculator/static/css/main.48cbacd1.css",
     "main.js": "/my-iphone-calculator/static/js/main.edd9db94.js",
     "static/js/787.18e06e40.chunk.js": "/my-iphone-calculator/static/js/787.18e06e40.chunk.js",
     "index.html": "/my-iphone-calculator/index.html",
-    "main.c88be785.css.map": "/my-iphone-calculator/static/css/main.c88be785.css.map",
+    "main.48cbacd1.css.map": "/my-iphone-calculator/static/css/main.48cbacd1.css.map",
     "main.edd9db94.js.map": "/my-iphone-calculator/static/js/main.edd9db94.js.map",
     "787.18e06e40.chunk.js.map": "/my-iphone-calculator/static/js/787.18e06e40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c88be785.css",
+    "static/css/main.48cbacd1.css",
     "static/js/main.edd9db94.js"
   ]
 }

@@ -54,7 +54,7 @@ and (device-height: 844px)
     .displayBox {
         border: 1px solid orange;
         border-radius: 10px;
-        width: 90%;
+        width: 70%;
         height: 15%;
         font-size: 3.5625rem;
         white-space: nowrap;
@@ -62,7 +62,7 @@ and (device-height: 844px)
         box-shadow: 10px 10px 10px #fff;
         overflow-x: scroll;
         position: absolute;
-        left: 5%;
+        left: 10%;
         top: 5%;
         display: flex;
         justify-content: flex-end;
@@ -76,7 +76,7 @@ and (device-height: 844px)
         .displayBox {
             border: 1px solid orange;
             border-radius: 10px;
-            width: 90%;
+            width: 70%;
             height: 15%;
             font-size: 3.5625rem;
             white-space: nowrap;
@@ -84,7 +84,7 @@ and (device-height: 844px)
             box-shadow: 10px 10px 10px #fff;
             overflow-x: scroll;
             position: absolute;
-            left: 5%;
+            left: 10%;
             top: 5%;
             display: flex;
             justify-content: flex-end;
@@ -98,7 +98,7 @@ and (device-height: 844px)
     .displayBox {
         border: 1px solid orange;
         border-radius: 10px;
-        width: 90%;
+        width: 70%;
         height: 15%;
         font-size: 3.5625rem;
         white-space: nowrap;
@@ -106,7 +106,7 @@ and (device-height: 844px)
         box-shadow: 10px 10px 10px #fff;
         overflow-x: scroll;
         position: absolute;
-        left: 5%;
+        left: 10%;
         top: 5%;
         display: flex;
         justify-content: flex-end;

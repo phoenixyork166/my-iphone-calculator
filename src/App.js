@@ -89,19 +89,19 @@ class App extends Component {
       // = Equal Operation
       else if (arg === "=") {
         if (this.state.nextOperation === '+') {
-          this.setState({ result: Number(this.state.result) + Number(this.state.input)}, () => {
+          this.setState({ result: ( (Number(this.state.result)*10) + (Number(this.state.input)*10) )/10}, () => {
             this.setState({ input: ''}, () => {
               this.setState({ nextOperation: ''})
             })
           })
         } else if (this.state.nextOperation === '-') {
-          this.setState({ result: Number(this.state.result) - Number(this.state.input)}, () => {
+          this.setState({ result: ( (Number(this.state.result)*10) - (Number(this.state.input)*10) )/10}, () => {
             this.setState({ input: ''}, () => {
               this.setState({ nextOperation: ''})
             });
           })
         } else if (this.state.nextOperation === 'x') {
-          this.setState({ result: Number(this.state.result) * Number(this.state.input)}, () => {
+          this.setState({ result: ( (Number(this.state.result)*10) * (Number(this.state.input)*10) )/10}, () => {
             this.setState({ input: ''}, () => {
               this.setState({ nextOperation: ''})
             })
@@ -146,6 +146,7 @@ class App extends Component {
       })
     }
 
+    // Tracking state variable changes
     componentDidUpdate(prevProps, prevState) {
 
       const plusMinusButton = document.querySelector('#root > div > div.buttons > div:nth-child(2) > button');
@@ -167,7 +168,15 @@ class App extends Component {
       const three = document.querySelector('#root > div > div.buttons > div:nth-child(15) > button');
       const zero = document.querySelector('#root > div > div.buttons > div:nth-child(17) > button');
       const equalButton = document.querySelector('#root > div > div.buttons > div:nth-child(19) > button');
-            
+      const percentButton = document.querySelector('#root > div > div > div:nth-child(3) > button');
+          
+      // To disable percentButton when needed
+      if (this.state.result === '' || this.state.nextOperation !== '' || this.state.input !== '') {
+        percentButton.disabled = true;
+      } else {
+        percentButton.disabled = false;
+      }
+
       // To keep tracking real-time users' input validations
       if (
         this.state.result !== prevState.result ||

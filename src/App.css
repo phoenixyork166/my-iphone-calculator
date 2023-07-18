@@ -2,7 +2,42 @@
 @media only screen
     and (device-width: 375px)
     and (device-height: 559px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+    /* and (-webkit-min-device-pixel-ratio: 2) */
+    {
+
+        .body {
+            box-sizing: border-box;
+            
+        }
+        
+        .container {
+            height: 120vw;
+            width: 90vw;
+            position: absolute;
+            border: 1px transparent blueviolet;
+            left: 5%;
+            top: 10%;
+            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+            border-radius: 20px;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(5, 20%);
+            position: absolute;
+            left: 5%;
+            top: 27%;
+            height: 66%;
+            width: 98%;
+        }
+    }
+/* iphone 6 alternatives */
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 667px)
+    /* and (-webkit-min-device-pixel-ratio: 2) */
+    {
 
         .body {
             box-sizing: border-box;
@@ -32,10 +67,12 @@
         }
     }
 
-    /* iphone 12Pro, 14 */
+/* iphone 12Pro, 14 */
 @media only screen
     and (device-width: 390px)
-    and (device-height: 844px) {
+    and (device-height: 844px) 
+    /* and (-webkit-device-pixel-ratio: 3)  */
+    {
 
    .body {
        box-sizing: border-box;
@@ -64,6 +101,7 @@
        width: 98%;
    }
 }
+
 /* iphone 6-plus */
 @media only screen 
     and (min-device-width: 414px) 
@@ -96,39 +134,40 @@
         }
 }
 
-/* iphone 6 alternatives */
+/* iphone 14 Pro */
 @media only screen
-    and (device-width: 375px)
-    and (device-height: 667px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+    and (device-width: 428px)
+    and (device-height: 926px) 
+    /* and (-webkit-device-pixel-ratio: 3) */
+    {
 
-        .body {
-            box-sizing: border-box;
-            
-        }
-        
-        .container {
-            height: 120vw;
-            width: 90vw;
-            position: absolute;
-            border: 1px transparent blueviolet;
-            left: 5%;
-            top: 10%;
-            box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
-            border-radius: 20px;
-        }
-        
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 25%);
-            grid-template-rows: repeat(5, 20%);
-            position: absolute;
-            left: 5%;
-            top: 27%;
-            height: 66%;
-            width: 98%;
-        }
-    }
+   .body {
+       box-sizing: border-box;
+       
+   }
+   
+   .container {
+       height: 120vw;
+       width: 90vw;
+       position: absolute;
+       border: 1px transparent blueviolet;
+       left: 5%;
+       top: 10%;
+       box-shadow: 10px 10px 10px 10px rgba(228, 224, 8, 0.8);
+       border-radius: 20px;
+   }
+   
+   .buttons {
+       display: grid;
+       grid-template-columns: repeat(4, 25%);
+       grid-template-rows: repeat(5, 20%);
+       position: absolute;
+       left: 5%;
+       top: 27%;
+       height: 66%;
+       width: 98%;
+   }
+}
 
 /* iphone 5 */
 @media screen and (device-aspect-ratio: 40/71) {

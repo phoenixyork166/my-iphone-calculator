@@ -299,7 +299,6 @@ class App extends Component {
     
     const { result, input } = this.state;
 
-
     return (
         <div className="container">
             { /* <Display screen={ input === '' ? result : input } /> */ }

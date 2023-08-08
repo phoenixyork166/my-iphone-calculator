@@ -17,7 +17,7 @@ html {
 
 // Grid
 $grid-width: 71rem;
-$gutter-vertical: 5rem;
+$gutter-vertical: 2rem;
 $gutter-horizontal: 2rem;
 
 .row {
@@ -50,7 +50,7 @@ $gutter-horizontal: 2rem;
     border-radius: 10rem;
 }
 @mixin font-size {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 .container {
@@ -86,13 +86,13 @@ $gutter-horizontal: 2rem;
 }
 
 .all-buttons {
-    min-width: 3rem;
+    min-width: 8rem;
     max-width: 20rem;
     width: 100%;
-    min-height: 3rem;
+    min-height: 8rem;
     max-height: 20rem;
     height: 100%;
-    transition: all .15s;
+    transition: all .3s;
     cursor: pointer;
 
     &:hover {
@@ -106,7 +106,6 @@ $gutter-horizontal: 2rem;
     }
 }
 .buttons {
-    margin-top: 5rem; 
     display: flex;
     flex-flow: row wrap;
     @include font-size;
@@ -134,7 +133,7 @@ $gutter-horizontal: 2rem;
   @media screen and (max-width: 500px) {  
     .container {
         margin: 0.5rem 0.5rem;
-        max-width: 50%;
+        max-width: 40%;
 
         .display-box {
             padding: 0;            
@@ -191,7 +190,7 @@ $gutter-horizontal: 2rem;
   @media screen and (max-width: 400px) {  
     .container {
         margin: 0.5rem 0.5rem;
-        max-width: 45%;
+        max-width: 30%;
 
         .display-box {
             padding: 0;            
@@ -305,7 +304,7 @@ $gutter-horizontal: 2rem;
   @media screen and (max-width: 200px) {
     .container {
         margin: 0.5rem 0.5rem;
-        max-width: 40%;
+        max-width: 55%;
 
         .display-box {
             padding: 0;

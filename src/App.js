@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Display from './components/Display/Display';
-import Button from './components/Button/Button';
 import './App.css';
 
 class App extends Component {  
@@ -28,6 +26,7 @@ class App extends Component {
           });
       };
 
+      // Initial state, result === ''
       const initial = result === '';
 
       // Summing
@@ -127,6 +126,12 @@ class App extends Component {
       else if (arg === '%') {
         this.setState({result: (this.state.result/100)});
       }
+      else if (arg === "del") {
+        const n = input.length;
+        if (n > 0)
+        // Truncate 1 letter from the right
+        this.setState({ input: input.slice(0, n-1)});
+        }
       else {
         this.setState({input: input.concat(arg)});
       }
@@ -149,26 +154,28 @@ class App extends Component {
     // Tracking state variable changes
     componentDidUpdate(prevProps, prevState) {
 
-      const plusMinusButton = document.querySelector('#root > div > div.buttons > div:nth-child(2) > button');
+      const cancelButton = document.querySelector('#root > div > div:nth-child(2) > div:nth-child(1) > div > button');
+      const plusMinusButton = document.querySelector('#root > div > div:nth-child(2) > div:nth-child(2) > div > button');
+      const percentButton = document.querySelector('#root > div > div:nth-child(2) > div:nth-child(3) > div > button');
       const display = document.querySelector('.display');
-      const dotButton = document.querySelector('#root > div > div.buttons > div:nth-child(18) > button');
-      const divideButton = document.querySelector('#root > div > div.buttons > div:nth-child(4) > button');
-      const multiplyButton = document.querySelector('#root > div > div.buttons > div:nth-child(8) > button');
-      const minusButton = document.querySelector('#root > div > div.buttons > div:nth-child(12) > button');
-      const plusButton = document.querySelector('#root > div > div.buttons > div:nth-child(16) > button');
+      const dotButton = document.querySelector('#root > div > div:nth-child(6) > div:nth-child(3) > div > button');
+      const divideButton = document.querySelector('#root > div > div:nth-child(2) > div:nth-child(4) > div > button');
+      const multiplyButton = document.querySelector('#root > div > div:nth-child(3) > div:nth-child(4) > div > button');
+      const minusButton = document.querySelector('#root > div > div:nth-child(4) > div:nth-child(4) > div > button');
+      const plusButton = document.querySelector('#root > div > div:nth-child(5) > div:nth-child(4) > div > button');
 
-      const seven = document.querySelector('#root > div > div.buttons > div:nth-child(5) > button');
-      const eight = document.querySelector('#root > div > div.buttons > div:nth-child(6) > button');
-      const nine = document.querySelector('#root > div > div.buttons > div:nth-child(7) > button');
-      const four = document.querySelector('#root > div > div.buttons > div:nth-child(9) > button');
-      const five = document.querySelector('#root > div > div.buttons > div:nth-child(10) > button');
-      const six = document.querySelector('#root > div > div.buttons > div:nth-child(11) > button');
-      const one = document.querySelector('#root > div > div.buttons > div:nth-child(13) > button');
-      const two = document.querySelector('#root > div > div.buttons > div:nth-child(14) > button');
-      const three = document.querySelector('#root > div > div.buttons > div:nth-child(15) > button');
-      const zero = document.querySelector('#root > div > div.buttons > div:nth-child(17) > button');
-      const equalButton = document.querySelector('#root > div > div.buttons > div:nth-child(19) > button');
-      const percentButton = document.querySelector('#root > div > div > div:nth-child(3) > button');
+      const seven = document.querySelector('#root > div > div:nth-child(3) > div:nth-child(1) > div > button');
+      const eight = document.querySelector('#root > div > div:nth-child(3) > div:nth-child(2) > div > button');
+      const nine = document.querySelector('#root > div > div:nth-child(3) > div:nth-child(3) > div > button');
+      const four = document.querySelector('#root > div > div:nth-child(4) > div:nth-child(1) > div > button');
+      const five = document.querySelector('#root > div > div:nth-child(4) > div:nth-child(2) > div > button');
+      const six = document.querySelector('#root > div > div:nth-child(4) > div:nth-child(3) > div > button');
+      const one = document.querySelector('#root > div > div:nth-child(5) > div:nth-child(1) > div > button');
+      const two = document.querySelector('#root > div > div:nth-child(5) > div:nth-child(2) > div > button');
+      const three = document.querySelector('#root > div > div:nth-child(5) > div:nth-child(3) > div > button');
+      const zero = document.querySelector('#root > div > div:nth-child(6) > div:nth-child(1) > div > button');
+      const del = document.querySelector('#root > div > div:nth-child(6) > div:nth-child(2) > div > button');
+      const equalButton = document.querySelector('#root > div > div:nth-child(6) > div:nth-child(4) > div > button');
           
       // To disable percentButton when needed
       if (this.state.result === '' || this.state.nextOperation !== '' || this.state.input !== '') {
@@ -260,16 +267,148 @@ class App extends Component {
 
   render() {
     
-    const buttons = ["C", "+/-", "%", "÷", "7", "8", "9", "x", "4", "5", "6", "-", "1", "2", "3", "+", "0", ".", "="]
+    const buttons_row1 = ["C", "+/-", "%", "÷"];
+    const buttons_row2 = ["7", "8", "9", "x"];
+    const buttons_row3 = ["4", "5", "6", "-"];
+    const buttons_row4 = ["1", "2", "3", "+"];
+    const buttons_row5 = ["0", "del", ".", "="];
 
+    // For mapping Classes to corresponding buttons
+    const classMap = {
+      'C': 'special',
+      '+/-': 'special',
+      '%': 'special',
+      'del': 'special',
+      '.': 'special',
+      '÷': 'handler',
+      'x': 'handler',
+      '+': 'handler',
+      '-': 'handler',
+      '=': 'handler',
+      '1': 'normal',
+      '2': 'normal',
+      '3': 'normal',
+      '4': 'normal',
+      '5': 'normal',
+      '6': 'normal',
+      '7': 'normal',
+      '8': 'normal',
+      '9': 'normal',
+      '0': 'normal'
+    }
+    
     const { result, input } = this.state;
 
+
     return (
-        <div className='container'>
-            <Display screen={ input === '' ? result : input } />
-            <div className='buttons'>
-                {buttons.map((btn, index) => {
-                    return <Button handler={this.handler} value={btn} key={index}/> 
+        <div className="container">
+            { /* <Display screen={ input === '' ? result : input } /> */ }
+            <div className="display-box">
+              {/* <textarea
+                className="display"
+                value={ input === '' ? result : input }
+              /> */} 
+              <div className="display">
+                {input === '' ? result : input }
+              </div>
+            </div>
+            {/* 1st row    */}
+            <div className="buttons">
+                {buttons_row1.map( btn => {
+                  return (
+                    <div className="row">
+                    <div className="col-1-of-4">
+                      <button 
+                        onClick={()=>this.handler(btn)}
+                        className={
+                          `${classMap[btn]} all-buttons`
+                        }
+                      >
+                        {btn}
+                      </button>
+                    </div>
+                  </div>
+                  )
+                })}
+            </div>
+
+            {/* 2nd row */}
+            <div className="buttons">
+                {buttons_row2.map( btn => {
+                  return (
+                    <div className="row">
+                    <div className="col-1-of-4">
+                      <button 
+                        onClick={()=>this.handler(btn)}
+                        className={
+                          `${classMap[btn]} all-buttons`
+                        }
+                      >
+                        {btn}
+                      </button>
+                    </div>
+                  </div>
+                  )
+                })}
+            </div>
+
+            {/* 3rd row */}
+            <div className="buttons">
+                {buttons_row3.map( btn => {
+                  return (
+                    <div className="row">
+                    <div className="col-1-of-4">
+                      <button 
+                        onClick={()=>this.handler(btn)}
+                        className={
+                          `${classMap[btn]} all-buttons`
+                        }
+                      >
+                        {btn}
+                      </button>
+                    </div>
+                  </div>
+                  )
+                })}
+            </div>
+
+            {/* 4th row */}
+            <div className="buttons">
+                {buttons_row4.map( btn => {
+                  return (
+                    <div className="row">
+                    <div className="col-1-of-4">
+                      <button 
+                        onClick={()=>this.handler(btn)}
+                        className={
+                          `${classMap[btn]} all-buttons`
+                        }
+                      >
+                        {btn}
+                      </button>
+                    </div>
+                  </div>
+                  )
+                })}
+            </div>
+
+            {/* 5th row */}
+            <div className="buttons">
+                {buttons_row5.map( btn => {
+                  return (
+                    <div className="row">
+                    <div className="col-1-of-4">
+                      <button 
+                        onClick={()=>this.handler(btn)}
+                        className={
+                          `${classMap[btn]} all-buttons`
+                        }
+                      >
+                        {btn}
+                      </button>
+                    </div>
+                  </div>
+                  )
                 })}
             </div>
         </div>

@@ -85,7 +85,7 @@ html {
 @media screen and (max-width: 500px) {
   .container {
     margin: 0.5rem 0.5rem;
-    max-width: 40%; }
+    max-width: 50%; }
     .container .display-box {
       padding: 0; }
       .container .display-box .display {

@@ -1,4 +1,4 @@
-## React App
+## React.js OOP paradigm
 ![Sass](https://res.cloudinary.com/practicaldev/image/fetch/s--Yo7-Tl_W--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aykr6602h90tij1154ha.png)
 
 ## Demonstration hyperlink: https://phoenixyork166.github.io/my-iphone-calculator
